@@ -1,0 +1,15 @@
+﻿  Compiling CUDA source file ExplicityMemExample.cu...
+  
+  C:\CudaProjects\CUDA_ProgrammingManual\CudaRuntime1>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include"  -G   --keep-dir x64\Debug  -maxrregcount=0    --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc143.pdb" -o C:\CudaProjects\CUDA_ProgrammingManual\CudaRuntime1\x64\Debug\ExplicityMemExample.cu.obj "C:\CudaProjects\CUDA_ProgrammingManual\CudaRuntime1\ExplicityMemExample.cu" 
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include\cuda/std/detail/libcxx/include/cmath(1032): warning #221-D: floating-point value does not fit in required floating-point type
+      if (__r >= ::nextafter(static_cast<_RealT>(_MaxVal), ((float)(1e+300))))
+                                                            ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+CUDACOMPILE : nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+  ExplicityMemExample.cu
+  tmpxft_0000814c_00000000-7_ExplicityMemExample.cudafe1.cpp
+     Criando biblioteca C:\CudaProjects\CUDA_ProgrammingManual\x64\Debug\ExplicityMemoryExample.lib e objeto C:\CudaProjects\CUDA_ProgrammingManual\x64\Debug\ExplicityMemoryExample.exp
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflita com uso de outras bibliotecas; use /NODEFAULTLIB:library
+  CudaRuntime1.vcxproj -> C:\CudaProjects\CUDA_ProgrammingManual\x64\Debug\ExplicityMemoryExample.exe
